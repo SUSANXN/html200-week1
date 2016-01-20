@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>The Bachelor: Season 20</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>THE BACHELOR</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">HOME</a></li>
+				<li> <a href="#">GALLERY</a></li>
+				<li> <a href="sign-up.html">PAST BACHELORS</a></li>
+				<li> <a href="#">ELIGIBILITY</a></li>
+				<li> <a href="http://www.google.com">CONTACT</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+            <h3>Want to become the next Bachelor? Tell us about yourself and register for a chance to become the next Bachelor. Please answer all questions below with accuracy. Applicants with the best match will advance onto the first round of interviews.
+            <p>Applicants must be 18 years of age to apply. </p>
+    
+			<!-- A Simple Form    -->
+		    <form id="sign-up-form" method="post" action="#" >
+                <fieldset>
+                    <h2>Apply</h2>
+                    <ul>
+                      <li>
+                        <label id="f-name-label">First Name    </label><input type="text" name="first-name" id="f-name-label" placeholder="First Name" required/> 
+                      </li>  
+                      <li>
+                        <label id="l-name-label">Last Name</label><input type="text" name="last-name" id="f-name-label" placeholder="Last Name" required/></li>              
+                      <li>
+                      <label>Date of Year</label>
+                        <select name="year">
+                          <option value="1980">1980</option>
+                          <option value="1981">1981</option>
+                          <option value="1982">1982</option>
+                          <option value="1983">1983</option>
+                          <option value="1984">1984</option>
+                          <option value="1985">1985</option>
+                          <option value="1986">1986</option>
+                          <option value="1987">1987</option>
+                          <option value="1988">1988</option>
+                          <option value="1989">1989</option>
+                          <option value="1990">1990</option>
+                          <option value="1991">1991</option>
+                          <option value="1992">1992</option>
+                        </select></li>
+                      <li>
+                        <label>Date of Day</label>
+                        <select name="day">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                        </select></li>
+                      <li><label>Month</label> 
+                        <select name="month">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select></li>
+                      <li>
+                        <label>Please enter a valid email</label>
+                      <input type="email" name="email"/></li>
+                      <li>
+                        <label>What is your occupation </label>
+                        <input type="aboutme" name="aboutme"/>
+                      </li>
+                      <li>
+                        <label>Enter Zip Code</label>
+                        <input type="number" required placeholder="90210" pattern="^[0-9]{5}" required/>
+                      </li>
+                      <li>
+                        <label>Tell us about your most recent relationship</label>
+                        <textarea>300 charachters or less.</textarea>
+                        <script>
+  var textarea = document.querySelector("textarea");
+  textarea.addEventListener("keydown", function(event) {
+    // The key code for F2 happens to be 113
+    if (event.keyCode == 113) {
+      replaceSelection(textarea, "Khasekhemwy");
+      event.preventDefault();
+    }
+  });
+  function replaceSelection(field, word) {
+    var from = field.selectionStart, to = field.selectionEnd;
+    field.value = field.value.slice(0, from) + word +
+                  field.value.slice(to);
+    // Put the cursor after the word
+    field.selectionStart = field.selectionEnd =
+      from + word.length;
+  }
+</script></li> 
+                      <li>
+                        <label>Select the gender you are attracted to: </label>
+                        <select multiple>
+                          <option>Men</option>
+                          <option>Women</option>
+                          <option>Both</option>
+                        </select></li><br>
+                      <li>
+                        <input type="submit" value="Sign-up now!" name="submit"/></li>
+                    </ul>     
+          </fieldset>
+          </form>
+        <br> 
+        </div><!-- closing maincContent div tag -->
+        <!--  This is the footer section, only footer stuff --
+		<footer>
+			<p>&copy; copyright 2016</p>	
+		</footer>
+	</body>
+</html>
