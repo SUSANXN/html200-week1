@@ -100,18 +100,17 @@
                         </select></li>
                       <li>
                         <label>Please enter a valid email</label>
-                      <input type="email" name="email"/></li>
+                      <input type="email" name="email" placeholder=required></li>
                       <li>
                         <label>What is your occupation </label>
-                        <input type="aboutme" name="aboutme"/>
+                        <input type="occupation" name="occupation" required/>
                       </li>
                       <li>
                         <label>Enter Zip Code</label>
-                        <input type="number" required placeholder="90210" pattern="^[0-9]{5}" required/>
+                        <input type="number" required placeholder="90210" pattern="^[0-9]" required/>
                       </li>
                       <li>
-                        <label>Tell us about your most recent relationship</label>
-                        <textarea>300 charachters or less.</textarea>
+                        <label>Tell us about your most recent relationship</label> <textarea input type="text" maxlength="1000" required name placeholder="1000 letter max" </input></textarea>
                         <script>
   var textarea = document.querySelector("textarea");
   textarea.addEventListener("keydown", function(event) {
